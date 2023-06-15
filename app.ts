@@ -1,8 +1,5 @@
-enum Direction{
-    left,
-    right,
-    top,
-    down,
-  };
-  let myDir : Direction = Direction.top
-  console.log(myDir)
+function add(a:number, b: number){
+    return a+b
+}
+  
+  console.log(add(1,6))

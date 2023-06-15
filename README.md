@@ -64,7 +64,32 @@ console.log(myDir)
   top,
   down,
 };
+
 let myDir : Direction = Direction.top //will give 2 as enum starts with 0
 console.log(myDir)
    ```
 
+### funtions:
+ In typescript function may be assigned with two ways
+ 1- function type
+ 2- argument type
+
+**function type:**
+```typescript
+function returnString(str:string) :Number{
+    let a = parseInt(str)
+    console.log(typeof a);
+    return a
+}
+  
+  console.log(returnString("123"))
+   ```
+
+**argument type:**
+```typescript
+function add(a:Number, b: Number){
+    return a+b
+}
+  
+  console.log(add(1,6))
+   ```
