@@ -1,5 +1,5 @@
-function add(a:number, b: number){
-    return a+b
+const multiply = (a:number, b: number) : number=>{
+    return a*b
 }
   
-  console.log(add(1,6))
+  console.log(multiply(2,6))

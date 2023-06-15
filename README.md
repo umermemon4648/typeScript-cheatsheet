@@ -93,3 +93,12 @@ function add(a:Number, b: Number){
   
   console.log(add(1,6))
    ```
+
+**arrow function:**
+```typescript
+const multiply = (a:number, b: number) : number=>{
+    return a*b
+}
+  
+  console.log(multiply(2,6))
+   ```
