@@ -69,7 +69,7 @@ let myDir : Direction = Direction.top //will give 2 as enum starts with 0
 console.log(myDir)
    ```
 
-### funtions:
+### functions:
  In typescript function may be assigned with two ways
  1- function type
  2- argument type
@@ -103,7 +103,7 @@ const sayHello = () : void=>{
   sayHello()
    ```
 
-using norma function
+using normal function
 ```typescript
 function sayHello() : void{
    console.log("Hello! Dev")
@@ -121,3 +121,68 @@ const multiply = (a:number, b: number) : number=>{
   console.log(multiply(2,6))
    ```
 
+
+### Objects:
+ In typescript objects may be assigned with two ways
+ 1- type Annotation
+ 2- Interface
+ 3- Using Class
+
+**using a type Annotation:**
+```typescript
+type Person = {
+  name: string,
+  age: number,
+  gender: string,
+  city: string
+}
+
+const personObj: Person = {
+  name: "Umer",
+  age: 21,
+  gender: "Male",
+  city: "Karachi",
+}
+  
+  console.log(personObj)
+   ```
+
+
+**using interface:**
+```typescript
+interface Person{
+  name: string,
+  age: number,
+  gender: string,
+  city: string
+}
+
+const personObj: Person = {
+  name: "Umer",
+  age: 21,
+  gender: "Male",
+  city: "Karachi",
+}
+  
+  console.log(personObj)
+   ```
+
+**using class Constructor:**
+```typescript
+class Person{
+    name: string
+    age: number
+    gender: string
+    city: string
+
+constructor(name: string, age: number, gender: string, city: string){
+    this.name = name
+    this.age = age
+    this.gender = gender
+    this.city = city
+}
+}
+
+const personClassObj = new Person("Umer", 21, "Male", "Karachi")
+console.log(personClassObj);
+   ```
