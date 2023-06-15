@@ -237,3 +237,34 @@ console.log(myObj);
 
    ```
 
+### optional object properties:
+This allows you to define properties that may or may not be present in an object.
+
+**using interface:**
+```typescript
+interface Person{
+    name: string,
+    age?: number,
+    gender?: string,
+    city: string
+  }
+  
+  const personObj: Person = {
+    name: "Umer",
+    city: "Karachi",
+  }
+    
+    console.log(personObj)
+
+   ```
+
+
+**another way to implement objects with optional properties:**
+```typescript
+const personObj: 
+  {name: string, age?: number, gender?: string, city: string} = {
+    name: "Umer",
+    city: "Karachi",
+  }
+console.log(personObj)
+   ```
