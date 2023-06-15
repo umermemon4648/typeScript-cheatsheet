@@ -94,6 +94,24 @@ function add(a:Number, b: Number){
   console.log(add(1,6))
    ```
 
+**void function type:**
+using arrow function
+```typescript
+const sayHello = () : void=>{
+   console.log("Hello! Dev")
+}
+  sayHello()
+   ```
+
+using norma function
+```typescript
+function sayHello() : void{
+   console.log("Hello! Dev")
+}
+  sayHello()
+   ```
+
+
 **arrow function:**
 ```typescript
 const multiply = (a:number, b: number) : number=>{
@@ -102,3 +120,4 @@ const multiply = (a:number, b: number) : number=>{
   
   console.log(multiply(2,6))
    ```
+
