@@ -1,16 +1,18 @@
-class Person{
-    name: string
-    age: number
-    gender: string
-    city: string
-
-constructor(name: string, age: number, gender: string, city: string){
-    this.name = name
-    this.age = age
-    this.gender = gender
-    this.city = city
-}
+interface ComplexObj{
+    fullname: String[],
+    age: Number,
+    isMale: boolean,
+    calculateSum: (a: number, b: number)=> number
 }
 
-const personClassObj = new Person("Umer", 21, "Male", "Karachi")
-console.log(personClassObj);
+const myObj: ComplexObj = {
+    fullname: ["Muhammad", "Umer"],
+    age: 21,
+    isMale: true,
+    calculateSum: (a, b)=>{
+        return a + b
+    },
+}
+const result = myObj.calculateSum(4,7)
+console.log(result);
+console.log(myObj);
