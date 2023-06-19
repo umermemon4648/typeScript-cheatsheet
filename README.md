@@ -253,9 +253,7 @@ interface Person{
     name: "Umer",
     city: "Karachi",
   }
-    
     console.log(personObj)
-
    ```
 
 
@@ -306,4 +304,13 @@ const y = 3;
 
 console.log(`Addition of ${x} and ${y}: `, add(x, y));
 console.log(`Difference of ${x} and ${y}: `,subtract(x,y))
+   ```
+
+### Union:
+A variable may have more than one type.
+
+```typescript
+const myAge: number | string = '24'
+    console.log(myAge)
+    console.log(typeof myAge)
    ```
