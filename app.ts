@@ -1,17 +1,9 @@
-type User = {
-  id: number;
-  name: string;
-  email: string;
-  age: number;
-} 
-const getUserData = (user:User) : string => {
-  return `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}, Age: ${user.age}`
-}
-const user:User = {
-  id: 1,
-  name: "Muhammad Umer",
-  email: "umermemon4648@gmail.com",
-  age: 21,
-}
-const userInfo = getUserData(user)
-console.log(userInfo
+type mathOperand = (x: number, y: number) => number
+
+const add: mathOperand = (x,y) => x+y
+const subtract: mathOperand = (x,y)=> x-y
+const x = 8;
+const y = 3;
+
+console.log(`Addition of ${x} and ${y}: `, add(x, y));
+console.log(`Difference of ${x} and ${y}: `,subtract(x,y))

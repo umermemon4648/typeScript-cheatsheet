@@ -45,7 +45,7 @@ console.log(config)
 
 
 **enum:**
- enum allow us to create constant variable that are meanst to immutable
+ enum allow us to create constant variable that are meant to immutable
   ```typescript
   enum Direction{
   left= "LEFT",
@@ -271,10 +271,10 @@ console.log(personObj)
 
 
 ### Alias:
-define type as a variable and resuse it 
-Common type is defined with the help of type alias.
+=> Define type as a variable and resuse it.
+=> Common type is defined with the help of type alias.
 
-**using interface:**
+**type alias with objects and functions:**
 ```typescript
 type User = {
   id: number;
@@ -293,4 +293,17 @@ const user:User = {
 }
 const userInfo = getUserData(user)
 console.log(userInfo)
+   ```
+
+**alias function type:**
+```typescript
+type mathOperand = (x: number, y: number) => number
+
+const add: mathOperand = (x,y) => x+y
+const subtract: mathOperand = (x,y)=> x-y
+const x = 8;
+const y = 3;
+
+console.log(`Addition of ${x} and ${y}: `, add(x, y));
+console.log(`Difference of ${x} and ${y}: `,subtract(x,y))
    ```
