@@ -342,6 +342,46 @@ const myCar: HybridCar ={
 }
 
 console.log(myCar);
+   ```
 
+### Here are the examples of using spread operators in TypeScript::
+
+**Array Concatenation:**
+
+```typescript
+const arr1: number[] = [1, 2, 3];
+const arr2: number[] = [4, 5, 6];
+const mergedArray: number[] = [...arr1, ...arr2];
+
+console.log(mergedArray);
 
    ```
+
+**Array Copy:**
+
+```typescript
+const originalArray: number[] = [1, 2, 3];
+const copiedArray: number[] = [...originalArray];
+console.log(copiedArray);
+
+   ```
+**Merged Object:**
+
+```typescript
+const obj1: { foo: number, bar: number } = { foo: 1, bar: 2 };
+const obj2: { baz: number } = { baz: 3 };
+
+const mergedObject: { foo: number, bar: number, baz: number } = { ...obj1, ...obj2 };
+console.log(mergedObject);
+   ```
+
+
+**Copy Object:**
+
+```typescript
+const originalObject: { foo: number, bar: number } = { foo: 1, bar: 2 };
+const copiedObject: { foo: number, bar: number } = { ...originalObject };
+
+console.log(copiedObject); 
+   ```
+
